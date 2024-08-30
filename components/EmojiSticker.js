@@ -8,6 +8,8 @@ export default function EmojiSticker({ imageSize, stickerSource }) {
         numberOfTaps(2).onStart(() => {
             if (scaleImage.value != imageSize * 2) {
                 scaleImage.value = imageSize * 2
+            } else {
+                scaleImage.value = imageSize
             }
         })
 
